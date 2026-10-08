@@ -34,17 +34,25 @@ especificación. Verificación contra el contrato:
 
 | Caso | Entrada (p1, p2, p3) | Esperado (a mano) | Obtenido | Coincide |
 |------|----------------------|-------------------|----------|----------|
-| 1 | 80, 70, 90 | 81.00, Aprobado | | |
-| 2 | 70, 70, 70 | 70.00, Aprobado | | |
-| 3 | 69, 70, 70 | 69.70, Reprobado | | |
-| 4 | 100, 100, 40 | 76.00, Reprobado | | |
-| 5 | 50, 100, 100 | 85.00, Aprobado | | |
-| 6 | 49, 100, 100 | 84.70, Reprobado | | |
-| 7 | 100, 100, 100 | 100.00, Aprobado | | |
+| 1 | 80, 70, 90 | 81.00, Aprobado | 81.00, Aprobado | Sí |
+| 2 | 70, 70, 70 | 70.00, Aprobado | 70.00, Aprobado | Sí |
+| 3 | 69, 70, 70 | 69.70, Reprobado | 69.70, Reprobado | Sí |
+| 4 | 100, 100, 40 | 76.00, Reprobado | 76.00, Reprobado | Sí |
+| 5 | 50, 100, 100 | 85.00, Aprobado | 85.00, Aprobado | Sí |
+| 6 | 49, 100, 100 | 84.70, Reprobado | 84.70, Reprobado | Sí |
+| 7 | 100, 100, 100 | 100.00, Aprobado | 100.00, Aprobado | Sí |
 
 ### Rechazos
 
-(pendiente)
+Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
+donde se armó el proyecto no lo tiene); se implementó directamente desde la
+especificación. Verificación contra el contrato:
+
+- `leerParciales()`: sin parámetros, textos de `input` y orden iguales a las restricciones, devuelve la tupla `(p1, p2, p3)` con `float`.
+- `calcularFinal(p1, p2, p3)`: fórmula idéntica al paso 2, sin redondear.
+- `determinarEstado(p1, p2, p3, final)`: condiciones `< 50` y `>= 70` en el orden de los pasos 3.1 a 3.3, sin `min`, `max` ni `round`.
+- `mostrarResultado(final, estado)`: imprime exactamente las dos líneas indicadas, sin retorno.
+- Sin clases, `import`, `try/except`, validaciones ni llamadas a funciones en el archivo.
 
 ## Ejercicio 3. Total de compra
 

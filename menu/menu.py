@@ -5,7 +5,9 @@ from ejercicios import ejercicio4_estacionamiento as ej4
 
 
 def ejecutarEjercicio1():
-    print("Ejercicio 1 pendiente.")
+    consumo = ej1.leerConsumo()
+    pago = ej1.calcularPago(consumo)
+    ej1.mostrarRecibo(consumo, pago)
 
 
 def ejecutarEjercicio2():

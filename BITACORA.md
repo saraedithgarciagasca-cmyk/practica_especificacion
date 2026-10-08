@@ -56,6 +56,18 @@ especificación. Verificación contra el contrato:
 
 ## Ejercicio 3. Total de compra
 
+### Casos de prueba
+
+| Caso | Entrada (subtotal) | Esperado (a mano): descuento, IVA, total | Obtenido | Coincide |
+|------|--------------------|------------------------------------------|----------|----------|
+| 1 | $500 | $0.00, $80.00, $580.00 | | |
+| 2 | $900 | $0.00, $144.00, $1,044.00 | | |
+| 3 | $1,000 | $100.00, $144.00, $1,044.00 | | |
+| 4 | $4,999 | $499.90, $719.86, $5,218.96 | | |
+| 5 | $5,000 | $1,000.00, $640.00, $4,640.00 | | |
+
+### Rechazos
+
 (pendiente)
 
 ## Ejercicio 4 (reto). Estacionamiento

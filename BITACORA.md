@@ -30,6 +30,20 @@ especificación. Verificación contra el contrato:
 
 ## Ejercicio 2. Calificación final
 
+### Casos de prueba
+
+| Caso | Entrada (p1, p2, p3) | Esperado (a mano) | Obtenido | Coincide |
+|------|----------------------|-------------------|----------|----------|
+| 1 | 80, 70, 90 | 81.00, Aprobado | | |
+| 2 | 70, 70, 70 | 70.00, Aprobado | | |
+| 3 | 69, 70, 70 | 69.70, Reprobado | | |
+| 4 | 100, 100, 40 | 76.00, Reprobado | | |
+| 5 | 50, 100, 100 | 85.00, Aprobado | | |
+| 6 | 49, 100, 100 | 84.70, Reprobado | | |
+| 7 | 100, 100, 100 | 100.00, Aprobado | | |
+
+### Rechazos
+
 (pendiente)
 
 ## Ejercicio 3. Total de compra

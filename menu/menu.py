@@ -18,7 +18,11 @@ def ejecutarEjercicio2():
 
 
 def ejecutarEjercicio3():
-    print("Ejercicio 3 pendiente.")
+    subtotal = ej3.leerSubtotal()
+    descuento = ej3.calcularDescuento(subtotal)
+    iva = ej3.calcularIVA(subtotal, descuento)
+    total = ej3.calcularTotal(subtotal, descuento, iva)
+    ej3.mostrarTicket(subtotal, descuento, iva, total)
 
 
 def ejecutarEjercicio4():

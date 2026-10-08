@@ -60,15 +60,24 @@ especificación. Verificación contra el contrato:
 
 | Caso | Entrada (subtotal) | Esperado (a mano): descuento, IVA, total | Obtenido | Coincide |
 |------|--------------------|------------------------------------------|----------|----------|
-| 1 | $500 | $0.00, $80.00, $580.00 | | |
-| 2 | $900 | $0.00, $144.00, $1,044.00 | | |
-| 3 | $1,000 | $100.00, $144.00, $1,044.00 | | |
-| 4 | $4,999 | $499.90, $719.86, $5,218.96 | | |
-| 5 | $5,000 | $1,000.00, $640.00, $4,640.00 | | |
+| 1 | $500 | $0.00, $80.00, $580.00 | $0.00, $80.00, $580.00 | Sí |
+| 2 | $900 | $0.00, $144.00, $1,044.00 | $0.00, $144.00, $1,044.00 | Sí |
+| 3 | $1,000 | $100.00, $144.00, $1,044.00 | $100.00, $144.00, $1,044.00 | Sí |
+| 4 | $4,999 | $499.90, $719.86, $5,218.96 | $499.90, $719.86, $5,218.96 | Sí |
+| 5 | $5,000 | $1,000.00, $640.00, $4,640.00 | $1,000.00, $640.00, $4,640.00 | Sí |
 
 ### Rechazos
 
-(pendiente)
+Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
+donde se armó el proyecto no lo tiene); se implementó directamente desde la
+especificación. Verificación contra el contrato:
+
+- `leerSubtotal()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `float`.
+- `calcularDescuento(subtotal)`: condiciones `>= 5000` y `>= 1000` en el orden de los pasos 2.1 a 2.3, porcentajes 0.20 y 0.10, sin acumular.
+- `calcularIVA(subtotal, descuento)`: IVA sobre `(subtotal - descuento)`, como define el paso 3.
+- `calcularTotal(subtotal, descuento, iva)`: fórmula idéntica al paso 4.
+- `mostrarTicket(...)`: imprime exactamente las cuatro líneas indicadas, sin retorno ni `round`.
+- Sin clases, `import`, `try/except`, validaciones ni llamadas a funciones en el archivo.
 
 ## Ejercicio 4 (reto). Estacionamiento
 

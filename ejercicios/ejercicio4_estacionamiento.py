@@ -86,3 +86,24 @@ minutos y muestra el importe a cobrar.
 # mostrarCobro(minutos, cobro) -> None : recibe los minutos (int) y el cobro (int)
 #     e imprime las dos líneas indicadas en las restricciones.
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+
+
+def leerMinutos():
+    minutos = int(input("Tiempo de estancia (minutos): "))
+    return minutos
+
+
+def calcularCobro(minutos):
+    if minutos <= 60:
+        cobro = 20
+    else:
+        horas_adicionales = (minutos - 60 + 59) // 60
+        cobro = 20 + horas_adicionales * 15
+    if cobro > 150:
+        cobro = 150
+    return cobro
+
+
+def mostrarCobro(minutos, cobro):
+    print(f"Tiempo de estancia: {minutos} minutos")
+    print(f"Importe a cobrar: ${cobro:,.2f}")

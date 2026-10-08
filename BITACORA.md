@@ -81,4 +81,21 @@ especificación. Verificación contra el contrato:
 
 ## Ejercicio 4 (reto). Estacionamiento
 
+### Casos de prueba
+
+| Caso | Entrada (minutos) | Esperado (a mano) | Obtenido | Coincide |
+|------|-------------------|-------------------|----------|----------|
+| 1 | 1 | $20.00 | | |
+| 2 | 45 | $20.00 | | |
+| 3 | 60 | $20.00 | | |
+| 4 | 61 | $35.00 | | |
+| 5 | 120 | $35.00 | | |
+| 6 | 121 | $50.00 | | |
+| 7 | 150 | $50.00 | | |
+| 8 | 540 | $140.00 | | |
+| 9 | 541 | $150.00 | | |
+| 10 | 600 | $150.00 | | |
+
+### Rechazos
+
 (pendiente)

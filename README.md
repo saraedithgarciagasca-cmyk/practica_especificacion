@@ -1,6 +1,6 @@
 # Práctica: Desarrollo guiado por especificación con GitHub Copilot
 
-- **Alumno:** Sara Edith García Gasca 
+- **Alumno:** Sara Edith Garcia Gasca 
 - **Matrícula:** (196677-4)
 - **Grupo:** (programacion)
 

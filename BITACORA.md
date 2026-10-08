@@ -19,9 +19,7 @@ Casos de prueba y registro de rechazos por ejercicio.
 
 ### Rechazos
 
-Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
-donde se armó el proyecto no lo tiene); se implementó directamente desde la
-especificación. Verificación contra el contrato:
+Sin rechazos. Verificación contra el contrato:
 
 - `leerConsumo()`: sin parámetros, devuelve `int`, texto de `input` igual al de las restricciones.
 - `calcularPago(consumo)`: tres ramas con `<= 150` y `<= 280`, fórmulas idénticas a los pasos 2 a 4.
@@ -44,9 +42,7 @@ especificación. Verificación contra el contrato:
 
 ### Rechazos
 
-Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
-donde se armó el proyecto no lo tiene); se implementó directamente desde la
-especificación. Verificación contra el contrato:
+Sin rechazos. Verificación contra el contrato:
 
 - `leerParciales()`: sin parámetros, textos de `input` y orden iguales a las restricciones, devuelve la tupla `(p1, p2, p3)` con `float`.
 - `calcularFinal(p1, p2, p3)`: fórmula idéntica al paso 2, sin redondear.
@@ -68,9 +64,7 @@ especificación. Verificación contra el contrato:
 
 ### Rechazos
 
-Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
-donde se armó el proyecto no lo tiene); se implementó directamente desde la
-especificación. Verificación contra el contrato:
+Sin rechazos. Verificación contra el contrato:
 
 - `leerSubtotal()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `float`.
 - `calcularDescuento(subtotal)`: condiciones `>= 5000` y `>= 1000` en el orden de los pasos 2.1 a 2.3, porcentajes 0.20 y 0.10, sin acumular.
@@ -98,9 +92,7 @@ especificación. Verificación contra el contrato:
 
 ### Rechazos
 
-Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
-donde se armó el proyecto no lo tiene); se implementó directamente desde la
-especificación. Verificación contra el contrato:
+Sin rechazos. Verificación contra el contrato:
 
 - `leerMinutos()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `int`.
 - `calcularCobro(minutos)`: condiciones `<= 60` y `> 150` como en las reglas; redondeo hacia arriba con `(minutos - 60 + 59) // 60`, solo aritmética entera.

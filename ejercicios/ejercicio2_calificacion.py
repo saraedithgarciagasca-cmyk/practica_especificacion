@@ -82,3 +82,30 @@ materia. Se necesita mostrar la calificación final y si el alumno aprobó.
 # mostrarResultado(final, estado) -> None : recibe la calificación final (float)
 #     y el estado (str) e imprime las dos líneas indicadas en las restricciones.
 # Implementa el algoritmo anterior utilizando las funciones del contrato.
+
+
+def leerParciales():
+    p1 = float(input("Parcial 1: "))
+    p2 = float(input("Parcial 2: "))
+    p3 = float(input("Parcial 3: "))
+    return p1, p2, p3
+
+
+def calcularFinal(p1, p2, p3):
+    final = (p1 * 30 + p2 * 30 + p3 * 40) / 100
+    return final
+
+
+def determinarEstado(p1, p2, p3, final):
+    if p1 < 50 or p2 < 50 or p3 < 50:
+        estado = "Reprobado"
+    elif final >= 70:
+        estado = "Aprobado"
+    else:
+        estado = "Reprobado"
+    return estado
+
+
+def mostrarResultado(final, estado):
+    print(f"Calificación final: {final:.2f}")
+    print(f"Estado: {estado}")

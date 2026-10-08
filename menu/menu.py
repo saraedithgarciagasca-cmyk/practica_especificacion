@@ -26,7 +26,9 @@ def ejecutarEjercicio3():
 
 
 def ejecutarEjercicio4():
-    print("Ejercicio 4 pendiente.")
+    minutos = ej4.leerMinutos()
+    cobro = ej4.calcularCobro(minutos)
+    ej4.mostrarCobro(minutos, cobro)
 
 
 def mostrarMenu():

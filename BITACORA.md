@@ -85,17 +85,25 @@ especificación. Verificación contra el contrato:
 
 | Caso | Entrada (minutos) | Esperado (a mano) | Obtenido | Coincide |
 |------|-------------------|-------------------|----------|----------|
-| 1 | 1 | $20.00 | | |
-| 2 | 45 | $20.00 | | |
-| 3 | 60 | $20.00 | | |
-| 4 | 61 | $35.00 | | |
-| 5 | 120 | $35.00 | | |
-| 6 | 121 | $50.00 | | |
-| 7 | 150 | $50.00 | | |
-| 8 | 540 | $140.00 | | |
-| 9 | 541 | $150.00 | | |
-| 10 | 600 | $150.00 | | |
+| 1 | 1 | $20.00 | $20.00 | Sí |
+| 2 | 45 | $20.00 | $20.00 | Sí |
+| 3 | 60 | $20.00 | $20.00 | Sí |
+| 4 | 61 | $35.00 | $35.00 | Sí |
+| 5 | 120 | $35.00 | $35.00 | Sí |
+| 6 | 121 | $50.00 | $50.00 | Sí |
+| 7 | 150 | $50.00 | $50.00 | Sí |
+| 8 | 540 | $140.00 | $140.00 | Sí |
+| 9 | 541 | $150.00 | $150.00 | Sí |
+| 10 | 600 | $150.00 | $150.00 | Sí |
 
 ### Rechazos
 
-(pendiente)
+Sin rechazos. Nota: el código de este ejercicio no lo propuso Copilot (el entorno
+donde se armó el proyecto no lo tiene); se implementó directamente desde la
+especificación. Verificación contra el contrato:
+
+- `leerMinutos()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `int`.
+- `calcularCobro(minutos)`: condiciones `<= 60` y `> 150` como en las reglas; redondeo hacia arriba con `(minutos - 60 + 59) // 60`, solo aritmética entera.
+- Decisión del reto (módulos): la especificación prohíbe todo `import`. Se comprobó con `grep` que ningún archivo de `ejercicios/` contiene `import` ni `from`. Tampoco hay `min`, `max`, `round` ni división con `/`.
+- `mostrarCobro(minutos, cobro)`: imprime exactamente las dos líneas indicadas, sin retorno.
+- Sin clases, `try/except`, validaciones ni llamadas a funciones en el archivo.

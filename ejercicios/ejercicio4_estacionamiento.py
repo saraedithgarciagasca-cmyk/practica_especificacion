@@ -103,6 +103,7 @@ def calcularCobro(minutos):
         cobro = 150
     return cobro
 
+
 def mostrarCobro(minutos, cobro):
     print(f"Tiempo de estancia: {minutos} minutos")
     print(f"Importe a cobrar: ${cobro:,.2f}")

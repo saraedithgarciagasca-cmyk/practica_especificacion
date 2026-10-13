@@ -1,101 +1,399 @@
-# Bitácora
+=== Ejercicio 1. Recibo de luz ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 1
+Ingrese el consumo en kWh: 100
+El importe del recibo de luz es: $100.00
 
-Casos de prueba y registro de rechazos por ejercicio.
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 1
+Ingrese el consumo en kWh: 150
+El importe del recibo de luz es: $150.00
 
-## Ejercicio 1. Recibo de luz
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 1
+Ingrese el consumo en kWh: 200
+El importe del recibo de luz es: $225.00
 
-### Casos de prueba
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 1
+Ingrese el consumo en kWh: 280
+El importe del recibo de luz es: $345.00
 
-| Caso | Entrada (kWh) | Esperado (a mano) | Obtenido | Coincide |
-|------|---------------|-------------------|----------|----------|
-| 1 | 0 | $0.00 | $0.00 | Sí |
-| 2 | 100 | $100.00 | $100.00 | Sí |
-| 3 | 150 | $150.00 | $150.00 | Sí |
-| 4 | 151 | $151.50 | $151.50 | Sí |
-| 5 | 200 | $225.00 | $225.00 | Sí |
-| 6 | 280 | $345.00 | $345.00 | Sí |
-| 7 | 281 | $348.00 | $348.00 | Sí |
-| 8 | 300 | $405.00 | $405.00 | Sí |
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 1
+Ingrese el consumo en kWh: 300
+El importe del recibo de luz es: $405.00
 
-### Rechazos
+=== Ejercicio 2. Calificación final ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 2
+Ingrese la calificación del primer parcial (0-100): 80
+Ingrese la calificación del segundo parcial (0-100): 70
+Ingrese la calificación del tercer parcial (0-100): 90
+Calificación final: 81.00
+Estado: Aprobado
 
-Sin rechazos. Verificación contra el contrato:
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 2
+Ingrese la calificación del primer parcial (0-100): 70
+Ingrese la calificación del segundo parcial (0-100): 70
+Ingrese la calificación del tercer parcial (0-100): 70
+Calificación final: 70.00
+Estado: Aprobado
 
-- `leerConsumo()`: sin parámetros, devuelve `int`, texto de `input` igual al de las restricciones.
-- `calcularPago(consumo)`: tres ramas con `<= 150` y `<= 280`, fórmulas idénticas a los pasos 2 a 4.
-- `mostrarRecibo(consumo, pago)`: imprime exactamente las dos líneas indicadas, sin retorno.
-- Sin clases, `import`, `try/except`, validaciones ni llamadas a funciones en el archivo.
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 2
+Ingrese la calificación del primer parcial (0-100): 100
+Ingrese la calificación del segundo parcial (0-100): 100
+Ingrese la calificación del tercer parcial (0-100): 40
+Calificación final: 76.00
+Estado: Reprobado
 
-## Ejercicio 2. Calificación final
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 2
+Ingrese la calificación del primer parcial (0-100): 69
+Ingrese la calificación del segundo parcial (0-100): 70
+Ingrese la calificación del tercer parcial (0-100): 70
+Calificación final: 69.70
+Estado: Reprobado
 
-### Casos de prueba
+=== Ejercicio 3. Total de compra ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 3
+Ingrese el monto de la compra: 500
+Subtotal: 500.00
+Descuento: 0.00
+IVA: 80.00
+Total: 580.00
 
-| Caso | Entrada (p1, p2, p3) | Esperado (a mano) | Obtenido | Coincide |
-|------|----------------------|-------------------|----------|----------|
-| 1 | 80, 70, 90 | 81.00, Aprobado | 81.00, Aprobado | Sí |
-| 2 | 70, 70, 70 | 70.00, Aprobado | 70.00, Aprobado | Sí |
-| 3 | 69, 70, 70 | 69.70, Reprobado | 69.70, Reprobado | Sí |
-| 4 | 100, 100, 40 | 76.00, Reprobado | 76.00, Reprobado | Sí |
-| 5 | 50, 100, 100 | 85.00, Aprobado | 85.00, Aprobado | Sí |
-| 6 | 49, 100, 100 | 84.70, Reprobado | 84.70, Reprobado | Sí |
-| 7 | 100, 100, 100 | 100.00, Aprobado | 100.00, Aprobado | Sí |
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 3
+Ingrese el monto de la compra: 900
+Subtotal: 900.00
+Descuento: 0.00
+IVA: 144.00
+Total: 1044.00
 
-### Rechazos
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 3
+Ingrese el monto de la compra: 1000
+Subtotal: 1000.00
+Descuento: 100.00
+IVA: 144.00
+Total: 1044.00
 
-Sin rechazos. Verificación contra el contrato:
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 3
+Ingrese el monto de la compra: 5000
+Subtotal: 5000.00
+Descuento: 1000.00
+IVA: 640.00
+Total: 4640.00
 
-- `leerParciales()`: sin parámetros, textos de `input` y orden iguales a las restricciones, devuelve la tupla `(p1, p2, p3)` con `float`.
-- `calcularFinal(p1, p2, p3)`: fórmula idéntica al paso 2, sin redondear.
-- `determinarEstado(p1, p2, p3, final)`: condiciones `< 50` y `>= 70` en el orden de los pasos 3.1 a 3.3, sin `min`, `max` ni `round`.
-- `mostrarResultado(final, estado)`: imprime exactamente las dos líneas indicadas, sin retorno.
-- Sin clases, `import`, `try/except`, validaciones ni llamadas a funciones en el archivo.
+=== Ejercicio 4. Estacionamiento ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 4
+Ingrese los minutos de estancia: 45
+El importe a cobrar es: $20.00
 
-## Ejercicio 3. Total de compra
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 4
+Ingrese los minutos de estancia: 60
+El importe a cobrar es: $20.00
 
-### Casos de prueba
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 4
+Ingrese los minutos de estancia: 61
+El importe a cobrar es: $35.00
 
-| Caso | Entrada (subtotal) | Esperado (a mano): descuento, IVA, total | Obtenido | Coincide |
-|------|--------------------|------------------------------------------|----------|----------|
-| 1 | $500 | $0.00, $80.00, $580.00 | $0.00, $80.00, $580.00 | Sí |
-| 2 | $900 | $0.00, $144.00, $1,044.00 | $0.00, $144.00, $1,044.00 | Sí |
-| 3 | $1,000 | $100.00, $144.00, $1,044.00 | $100.00, $144.00, $1,044.00 | Sí |
-| 4 | $4,999 | $499.90, $719.86, $5,218.96 | $499.90, $719.86, $5,218.96 | Sí |
-| 5 | $5,000 | $1,000.00, $640.00, $4,640.00 | $1,000.00, $640.00, $4,640.00 | Sí |
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 4
+Ingrese los minutos de estancia: 150
+El importe a cobrar es: $50.00
 
-### Rechazos
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
+Seleccione una opción: 4
+Ingrese los minutos de estancia: 600
+El importe a cobrar es: $150.00
 
-Sin rechazos. Verificación contra el contrato:
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+0. Salir
 
-- `leerSubtotal()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `float`.
-- `calcularDescuento(subtotal)`: condiciones `>= 5000` y `>= 1000` en el orden de los pasos 2.1 a 2.3, porcentajes 0.20 y 0.10, sin acumular.
-- `calcularIVA(subtotal, descuento)`: IVA sobre `(subtotal - descuento)`, como define el paso 3.
-- `calcularTotal(subtotal, descuento, iva)`: fórmula idéntica al paso 4.
-- `mostrarTicket(...)`: imprime exactamente las cuatro líneas indicadas, sin retorno ni `round`.
-- Sin clases, `import`, `try/except`, validaciones ni llamadas a funciones en el archivo.
+=== Ejercicio 5. Renta de bicicletas ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 5
+Ingrese el número de horas de renta: 1
+El importe a pagar por 1 horas de renta es: $30.00
 
-## Ejercicio 4 (reto). Estacionamiento
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 5
+Ingrese el número de horas de renta: 2
+El importe a pagar por 2 horas de renta es: $60.00
 
-### Casos de prueba
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 5
+Ingrese el número de horas de renta: 3
+El importe a pagar por 3 horas de renta es: $76.50
 
-| Caso | Entrada (minutos) | Esperado (a mano) | Obtenido | Coincide |
-|------|-------------------|-------------------|----------|----------|
-| 1 | 1 | $20.00 | $20.00 | Sí |
-| 2 | 45 | $20.00 | $20.00 | Sí |
-| 3 | 60 | $20.00 | $20.00 | Sí |
-| 4 | 61 | $35.00 | $35.00 | Sí |
-| 5 | 120 | $35.00 | $35.00 | Sí |
-| 6 | 121 | $50.00 | $50.00 | Sí |
-| 7 | 150 | $50.00 | $50.00 | Sí |
-| 8 | 540 | $140.00 | $140.00 | Sí |
-| 9 | 541 | $150.00 | $150.00 | Sí |
-| 10 | 600 | $150.00 | $150.00 | Sí |
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 5
+Ingrese el número de horas de renta: 4
+El importe a pagar por 4 horas de renta es: $102.00
 
-### Rechazos
+=== Ejercicio 6. Boleto de cine ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 6
+Ingrese la edad del asistente: 8
+El precio del boleto para un asistente de 8 años es: $40.00
 
-Sin rechazos. Verificación contra el contrato:
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 6
+Ingrese la edad del asistente: 12
+El precio del boleto para un asistente de 12 años es: $40.00
 
-- `leerMinutos()`: sin parámetros, texto de `input` igual al de las restricciones, devuelve `int`.
-- `calcularCobro(minutos)`: condiciones `<= 60` y `> 150` como en las reglas; redondeo hacia arriba con `(minutos - 60 + 59) // 60`, solo aritmética entera.
-- Decisión del reto (módulos): la especificación prohíbe todo `import`. Se comprobó con `grep` que ningún archivo de `ejercicios/` contiene `import` ni `from`. Tampoco hay `min`, `max`, `round` ni división con `/`.
-- `mostrarCobro(minutos, cobro)`: imprime exactamente las dos líneas indicadas, sin retorno.
-- Sin clases, `try/except`, validaciones ni llamadas a funciones en el archivo.
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 6
+Ingrese la edad del asistente: 13
+El precio del boleto para un asistente de 13 años es: $80.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 6
+Ingrese la edad del asistente: 59
+El precio del boleto para un asistente de 59 años es: $80.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 6
+Ingrese la edad del asistente: 60
+El precio del boleto para un asistente de 60 años es: $40.00
+
+=== Ejercicio 7. Multa por velocidad ===
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 7
+Ingrese la velocidad del vehículo (km/h): 50
+La multa por exceso de velocidad para 50 km/h es: $0.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 7
+Ingrese la velocidad del vehículo (km/h): 60
+La multa por exceso de velocidad para 60 km/h es: $0.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 7
+Ingrese la velocidad del vehículo (km/h): 61
+La multa por exceso de velocidad para 61 km/h es: $500.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 7
+Ingrese la velocidad del vehículo (km/h): 80
+La multa por exceso de velocidad para 80 km/h es: $500.00
+
+PRÁCTICA: DESARROLLO GUIADO POR ESPECIFICACIÓN
+1. Recibo de luz
+2. Calificación final
+3. Total de compra
+4. Estacionamiento
+5. Renta de bicicletas
+6. Boleto de cine
+7. Multa por velocidad
+0. Salir
+Seleccione una opción: 7
+Ingrese la velocidad del vehículo (km/h): 81
+La multa por exceso de velocidad para 81 km/h es: $1000.00 
